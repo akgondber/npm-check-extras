@@ -26,6 +26,7 @@ $ npm-check-extras --help
         --check-packages  Check packages immediately
         --production      Skip devDependencies
         --dev-only        Look at devDependencies only (skip dependencies)
+        --global          Look at global modules
         --store-history   Store info about packages actions history to a file (.npm-check-history.json)
         --skip-unused     Skip check for unused packages
 
@@ -37,19 +38,22 @@ $ npm-check-extras --help
     $ npm-check-extras --prod
     $ npm-check-extras --check-packages --dev-only
     $ npm-check-extras --check --dev-only
+    $ npm-check-extras --check --dev-only --store-history
+    $ npm-check-extras --global
+    $ npm-check-extras --check --global
     $ npm-check-extras -c -d
     $ npm-check-extras --skup-unused
 ```
 
 ## Screenshots
 
-Checking devDependencies, then select packages by `li` filter.
+Checking project's dependencies.
 
-![Check devDependencies](media/screenshot-1.png)
+![Check dependencies](media/screenshot-1.png)
 
-Checking production dependencies, then select packages by `a` filter.
+Checking globally installed dependencies, then select packages by `m` filter.
 
-![Check production dependencies](media/screenshot-2.png)
+![Check global dependencies](media/screenshot-2.png)
 
 ## What's under the hood?
 

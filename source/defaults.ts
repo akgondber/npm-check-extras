@@ -27,6 +27,11 @@ export const availableActions: ActionItem[] = [
 		By default npm-check will look at packages listed as dependencies and devDependencies.
 		This option will let it ignore outdated and unused checks for packages listed as devDependencies.`,
 	},
+	{
+		name: 'global',
+		displayName: 'Look at global modules',
+		helpMessage: 'Check the versions of your globally installed packages.',
+	},
 ];
 
 export const colors = {

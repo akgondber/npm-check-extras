@@ -10,7 +10,6 @@ import {
 	getButtonColor,
 	getCommandFromSentence,
 	getId,
-	getSelected,
 	isAvailableChar,
 	removeUrl,
 } from './helpers.js';
@@ -36,6 +35,7 @@ type Props = {
 	readonly isShowPackages?: boolean;
 	readonly isStoreHistory?: boolean;
 	readonly isDevOnly?: boolean;
+	readonly isGlobal?: boolean;
 	readonly isProduction?: boolean;
 	readonly isSkipUnused?: boolean;
 };
@@ -66,6 +66,7 @@ export default function App({
 	isShowPackages,
 	isDevOnly,
 	isProduction,
+	isGlobal,
 	isStoreHistory,
 	isSkipUnused,
 }: Props) {
@@ -78,15 +79,12 @@ export default function App({
 	const status = useStore($status);
 
 	useEffect(() => {
-		if (isProduction) optionsManager.selectWithChecks('production');
-		else if (isDevOnly) optionsManager.selectWithChecks('dev-only');
+		if (isStoreHistory) optionsManager.selectByName('store-history');
+		if (isSkipUnused) optionsManager.selectWithChecks('skip-unused');
 
-		R.keys(
-			getSelected({
-				'store-history': isStoreHistory,
-				'skip-unused': isSkipUnused,
-			}),
-		).map(R.nAry(1, optionsManager.selectByName));
+		if (isGlobal) optionsManager.selectWithChecks('global');
+		else if (isProduction) optionsManager.selectWithChecks('production');
+		else if (isDevOnly) optionsManager.selectWithChecks('dev-only');
 
 		if (isShowPackages) {
 			/* eslint-disable no-inner-declarations */
@@ -100,10 +98,21 @@ export default function App({
 			fetchData(); // eslint-disable-line @typescript-eslint/no-floating-promises
 		}
 
-		return $userInput.subscribe(value => {
+		const unsubsribeUserInput = $userInput.subscribe(value => {
 			packagesActions.selectPackagesByFilter(value.value);
 		});
-	}, [isShowPackages, isDevOnly, isProduction, isStoreHistory, isSkipUnused]);
+
+		return () => {
+			unsubsribeUserInput();
+		};
+	}, [
+		isShowPackages,
+		isDevOnly,
+		isProduction,
+		isGlobal,
+		isStoreHistory,
+		isSkipUnused,
+	]);
 
 	/* eslint-disable complexity */
 	useInput(async (input, key) => {

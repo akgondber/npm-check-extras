@@ -13,6 +13,7 @@ const cli = meow(
 		--check-packages  Check packages immediately
 		--production      Skip devDependencies
 		--dev-only        Look at devDependencies only (skip dependencies)
+		--global          Look at global modules
 		--store-history   Store info about packages actions history to a file (.npm-check-history.json)
 		--skip-unused     Skip check for unused packages
 
@@ -48,6 +49,11 @@ const cli = meow(
 				default: false,
 				aliases: ['prod'],
 			},
+			global: {
+				type: 'boolean',
+				shortFlag: 'g',
+				default: false,
+			},
 			storeHistory: {
 				type: 'boolean',
 				shortFlag: 'h',
@@ -64,13 +70,14 @@ const cli = meow(
 	},
 );
 
-const {checkPackages, devOnly, production, storeHistory, skipUnused} =
+const {checkPackages, devOnly, production, storeHistory, skipUnused, global} =
 	cli.flags;
 render(
 	<App
 		isShowPackages={checkPackages}
 		isStoreHistory={storeHistory}
 		isDevOnly={devOnly}
+		isGlobal={global}
 		isProduction={production}
 		isSkipUnused={skipUnused}
 	/>,

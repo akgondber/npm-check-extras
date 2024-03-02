@@ -54,6 +54,8 @@ const deactivatePackage = R.set(R.lensProp<PackageDetail>('isActive'), false);
 const activateOptionItem = R.set(R.lensProp<Action>('isActive'), true);
 const deactivateOptionItem = R.set(R.lensProp<Action>('isActive'), false);
 const toggleActionItem = R.over(R.lensProp<Action>('isSelected'), R.not);
+const selectAction = R.set(R.lensProp<Action>('isSelected'), true);
+const unselectAction = R.set(R.lensProp<Action>('isSelected'), false);
 const getSelected = R.filter(value => R.equals(true, value));
 const getButtonColor = (name: string) =>
 	focusableItemsManager.isActive(name)
@@ -83,4 +85,6 @@ export {
 	deactivatePackage,
 	getNextIndex,
 	getPreviousIndex,
+	selectAction,
+	unselectAction,
 };

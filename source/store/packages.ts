@@ -51,7 +51,12 @@ export const getUpdateCandidatePackages = async (): Promise<
 	const args = [
 		'--no-colors',
 		'--no-emoji',
-		...addSelectedOptionsToArgs(['dev-only', 'production', 'skip-unused']),
+		...addSelectedOptionsToArgs([
+			'dev-only',
+			'production',
+			'global',
+			'skip-unused',
+		]),
 	];
 
 	const isExecaError = (error: any): error is ExecaError => {

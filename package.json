@@ -1,6 +1,6 @@
 {
 	"name": "npm-check-extras",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "CLI app to check for outdated and unused dependencies, and run update/delete action over selected ones",
 	"keywords": [
 		"app",
@@ -12,13 +12,17 @@
 		"feature",
 		"npm",
 		"npm-check",
+		"npmoutdated",
 		"package",
 		"packagemanager",
+		"upgrade",
 		"productivity",
 		"workflow",
 		"interactive",
 		"manager",
-		"package-manager"
+		"package-manager",
+		"global",
+		"automatization"
 	],
 	"homepage": "https://github.com/akgondber/npm-check-extras",
 	"repository": "akgondber/npm-check-extras",
@@ -41,8 +45,7 @@
 		"lint": "xo",
 		"prettify": "prettier . --write",
 		"test": "prettier --check . && xo && ava",
-		"xofix": "xo --fix",
-		"pla": "ts-node-esm tmp/chc.ts"
+		"xofix": "xo --fix"
 	},
 	"xo": {
 		"extends": "xo-react",
@@ -90,7 +93,7 @@
 		"@types/react": "^18.0.32",
 		"@types/uuid": "^9.0.7",
 		"@types/validate-npm-package-name": "^4.0.2",
-		"ava": "^6.0.1",
+		"ava": "^6.1.2",
 		"chalk": "^5.2.0",
 		"eslint-config-xo-react": "^0.27.0",
 		"eslint-plugin-prettier": "^5.0.0",

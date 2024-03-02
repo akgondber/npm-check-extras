@@ -5,7 +5,8 @@ import {$availableActions} from '../store.js';
 import {
 	activateOptionItem,
 	deactivateOptionItem,
-	toggleActionItem,
+	selectAction,
+	unselectAction,
 } from '../helpers.js';
 import RU from '../ramda-utils.js';
 import {
@@ -36,6 +37,17 @@ export const addToSelected = action(
 		return store.get();
 	},
 );
+
+const namePath = ['value', 'name'];
+const mainCompetings = ['production', 'dev-only', 'global'];
+const getCompetingOptions = (subject: string): string[] => {
+	return R.cond([
+		[R.equals('global'), R.always(R.append('skip-unused', mainCompetings))],
+		[R.equals('skip-unused'), R.always(['global', 'skip-unused'])],
+		[RU.flipIncludes(mainCompetings), R.always(mainCompetings)],
+		[R.T, R.always([])],
+	])(subject);
+};
 
 const removeFromSelected = action(
 	$selectedOptionsIndexes,
@@ -104,6 +116,12 @@ const findPrevious = (sourceId: number): Action => {
 	return R.head(items)!;
 };
 
+const getSelectUnselect = (source: string, list: string[]) =>
+	R.map(
+		(item: string) => (R.equals(source, item) ? selectAction : unselectAction),
+		list,
+	);
+
 export const optionsManager = {
 	selectItem(item: ActionItem) {
 		const found = R.findIndex(R.propEq(item, 'value'), $availableActions.get());
@@ -116,7 +134,7 @@ export const optionsManager = {
 	selectByName(optionName: string) {
 		const availableActions = $availableActions.get();
 		const targetIndex = R.findIndex(
-			R.pathEq(optionName, ['value', 'name']),
+			R.pathEq(optionName, namePath),
 			availableActions,
 		);
 		$availableActions.set(
@@ -130,7 +148,7 @@ export const optionsManager = {
 	activateByName(optionName: string) {
 		const availableActions = $availableActions.get();
 		const targetOption = R.find(
-			R.pathEq(optionName, ['value', 'name']),
+			R.pathEq(optionName, namePath),
 			availableActions,
 		);
 
@@ -193,53 +211,26 @@ export const optionsManager = {
 	},
 	selectWithChecks(value: string) {
 		const availableActions = $availableActions.get();
-
-		const itemIsSelected = (optionName: string) => {
-			const checkableIndex = R.findIndex(
-				R.pathEq(optionName, ['value', 'name']),
-				availableActions,
-			);
-			if (checkableIndex === -1) {
-				return false;
-			}
-
-			return R.path([checkableIndex, 'isSelected'], availableActions);
-		};
-
 		const indexOfValue = (optionName: string) =>
-			R.findIndex(R.pathEq(optionName, ['value', 'name']), availableActions);
-		const setIsSelected = R.set(R.lensProp<Action>('isSelected'), true);
-		const unsetIsSelected = R.set(R.lensProp<Action>('isSelected'), false);
+			R.findIndex(R.pathEq(optionName, namePath), availableActions);
 
-		if (value === 'production') {
+		const competingOptions = getCompetingOptions(value);
+		if (!R.isEmpty(competingOptions)) {
 			$availableActions.set(
-				R.adjust(indexOfValue(value), setIsSelected, availableActions),
+				RU.adjustAll(
+					R.map(R.nAry(1, indexOfValue), competingOptions),
+					getSelectUnselect(value, competingOptions),
+					availableActions,
+				) as Action[],
 			);
-
-			if (itemIsSelected('dev-only')) {
-				$availableActions.set(
-					R.adjust(indexOfValue('dev-only'), unsetIsSelected, availableActions),
-				);
-			}
-		} else if (value === 'dev-only') {
-			$availableActions.set(
-				R.adjust(indexOfValue(value), setIsSelected, availableActions),
-			);
-			if (itemIsSelected('production')) {
-				$availableActions.set(
-					R.adjust(
-						indexOfValue('production'),
-						unsetIsSelected,
-						availableActions,
-					),
-				);
-			}
 		}
 
 		return $availableActions.get();
 	},
 	toggle() {
 		const availableActions = $availableActions.get();
+		const indexOfValue = (optionName: string) =>
+			R.findIndex(R.pathEq(optionName, namePath), availableActions);
 
 		const currentOption = R.find(
 			R.pathEq(true, ['isActive']),
@@ -250,13 +241,16 @@ export const optionsManager = {
 			return $availableActions.get();
 		}
 
-		const namePath = ['value', 'name'];
 		const currentOptionIndex = R.findIndex(
 			R.propEq(currentOption.id, 'id'),
 			availableActions,
 		);
-		const currentSubject = R.path(namePath, currentOption);
-		const competingOptions = ['production', 'dev-only'];
+		const currentSubject = R.path(namePath, currentOption) as string;
+		const competingOptions: string[] = R.cond([
+			[R.equals('global'), R.always(R.append('skip-unused', mainCompetings))],
+			[R.equals('skip-unused'), R.always(['global', 'skip-unused'])],
+			[R.T, R.always(mainCompetings)],
+		])(currentSubject);
 
 		if (
 			!R.includes(currentSubject, competingOptions) ||
@@ -280,14 +274,11 @@ export const optionsManager = {
 		}
 
 		$availableActions.set(
-			R.map(
-				R.ifElse(
-					R.pathSatisfies(RU.flipIncludes(competingOptions), namePath),
-					toggleActionItem,
-					R.identity,
-				),
+			RU.adjustAll(
+				R.map(R.nAry(1, indexOfValue), competingOptions),
+				getSelectUnselect(currentSubject, competingOptions),
 				availableActions,
-			),
+			) as Action[],
 		);
 
 		return $availableActions.get();
