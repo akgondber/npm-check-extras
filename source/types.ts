@@ -33,6 +33,24 @@ type FocusableItem = Activable & {
 	id: number;
 	kind: string;
 	name: string;
+	inView?: boolean;
+};
+
+type OperationItem = {
+	id: string;
+	date: string;
+	name: string;
+	operation: string;
+	command: string;
+};
+
+type HistoryOperationItem = OperationItem & {
+	isVisible: boolean;
+};
+type HistoryData = {
+	limit: number;
+	page: number;
+	items: OperationItem[];
 };
 
 export type {
@@ -43,4 +61,7 @@ export type {
 	Selectable,
 	Activable,
 	FocusableItem,
+	OperationItem,
+	HistoryOperationItem,
+	HistoryData,
 };

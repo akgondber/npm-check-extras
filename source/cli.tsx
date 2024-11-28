@@ -66,12 +66,24 @@ const cli = meow(
 				default: false,
 				aliases: ['skun'],
 			},
+			showHistory: {
+				type: 'boolean',
+				default: false,
+				aliases: ['shistory', 'shi', 'shst', 'shist'],
+			},
 		},
 	},
 );
 
-const {checkPackages, devOnly, production, storeHistory, skipUnused, global} =
-	cli.flags;
+const {
+	checkPackages,
+	devOnly,
+	production,
+	storeHistory,
+	skipUnused,
+	global,
+	showHistory,
+} = cli.flags;
 render(
 	<App
 		isShowPackages={checkPackages}
@@ -80,5 +92,6 @@ render(
 		isGlobal={global}
 		isProduction={production}
 		isSkipUnused={skipUnused}
+		isShowHistory={showHistory}
 	/>,
 );

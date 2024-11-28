@@ -1,6 +1,6 @@
 {
 	"name": "npm-check-extras",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "CLI app to check for outdated and unused dependencies, and run update/delete action over selected ones",
 	"keywords": [
 		"app",
@@ -27,7 +27,6 @@
 	"homepage": "https://github.com/akgondber/npm-check-extras",
 	"repository": "akgondber/npm-check-extras",
 	"license": "MIT",
-	"type": "module",
 	"bin": {
 		"npm-check-extras": "dist/cli.js",
 		"npm-check-extras-cli": "dist/cli.js",
@@ -44,14 +43,37 @@
 		"go": "node dist/cli.js",
 		"lint": "xo",
 		"prettify": "prettier . --write",
-		"test": "prettier --check . && xo && ava",
+		"test": "prettier --check . && xo && loadr -- ava",
 		"xofix": "xo --fix"
 	},
 	"xo": {
 		"extends": "xo-react",
 		"prettier": true,
 		"rules": {
-			"react/prop-types": "off"
+			"react/prop-types": "off",
+			"unicorn/filename-case": "off",
+			"capitalized-comments": "off",
+			"ava/no-import-test-files": "off",
+			"unicorn/prevent-abbreviations": [
+				"error",
+				{
+					"allowList": {
+						"addSelectedOptionsToArgs": true,
+						"acc": true,
+						"Props": true,
+						"Fn": true,
+						"curr": true,
+						"args": true,
+						"i": true
+					}
+				}
+			],
+			"complexity": [
+				"error",
+				{
+					"max": 23
+				}
+			]
 		}
 	},
 	"prettier": {
@@ -64,48 +86,56 @@
 		"useTabs": true
 	},
 	"ava": {
-		"extensions": {
-			"ts": "module",
-			"tsx": "module"
-		},
+		"verbose": true,
 		"nodeArguments": [
 			"--loader=ts-node/esm"
-		]
+		],
+		"require": [
+			"ts-node/register"
+		],
+		"environmentVariables": {
+			"NODE_NO_WARNINGS": "1"
+		}
 	},
 	"dependencies": {
 		"@nanostores/react": "^0.7.1",
 		"cli-spinners": "^2.9.2",
-		"execa": "^8.0.1",
+		"execa": "^9.5.1",
 		"figures": "^6.0.1",
 		"ink": "^4.2.0",
 		"ink-spinner": "^5.0.0",
-		"meow": "^12.0.1",
+		"meow": "^13.2.0",
 		"nanostores": "^0.9.5",
-		"ramda": "^0.29.1",
+		"ramda": "^0.30.1",
 		"range-stepper": "^1.6.0",
 		"react": "^18.2.0",
 		"uuid": "^9.0.1"
 	},
 	"devDependencies": {
-		"@sindresorhus/tsconfig": "^3.0.1",
+		"@k-foss/ts-esnode": "^2.0.3",
+		"@sindresorhus/tsconfig": "^7.0.0",
 		"@types/ink-testing-library": "^1.0.4",
-		"@types/ramda": "^0.29.9",
+		"@types/ramda": "^0.30.2",
 		"@types/react": "^18.0.32",
 		"@types/uuid": "^9.0.7",
 		"@types/validate-npm-package-name": "^4.0.2",
-		"ava": "^6.1.2",
+		"ava": "^6.2.0",
 		"chalk": "^5.2.0",
 		"eslint-config-xo-react": "^0.27.0",
 		"eslint-plugin-prettier": "^5.0.0",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"ink-testing-library": "^3.0.0",
+		"import-jsx": "^5.0.0",
+		"ink-testing-library": "^4.0.0",
+		"loadr": "^0.1.1",
 		"prettier": "^3.1.1",
 		"ts-node": "^10.9.2",
-		"typescript": "^5.3.3",
-		"xo": "^0.56.0"
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2",
+		"xo": "^0.59.3"
 	},
 	"engines": {
 		"node": ">=16"
-	}
+	},
+	"type": "module"
 }

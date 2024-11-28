@@ -40,11 +40,23 @@ export const addToSelected = action(
 
 const namePath = ['value', 'name'];
 const mainCompetings = ['production', 'dev-only', 'global'];
+const secondaryCompetings = [
+	'store-history',
+	'skip-unused',
+	'production',
+	'dev-only',
+	'show-history',
+];
 const getCompetingOptions = (subject: string): string[] => {
 	return R.cond([
 		[R.equals('global'), R.always(R.append('skip-unused', mainCompetings))],
 		[R.equals('skip-unused'), R.always(['global', 'skip-unused'])],
-		[RU.flipIncludes(mainCompetings), R.always(mainCompetings)],
+		[R.equals('store-history'), R.always(['show-history'])],
+		[
+			RU.flipIncludes(mainCompetings),
+			R.always(R.append('show-history', mainCompetings)),
+		],
+		[RU.flipIncludes(secondaryCompetings), R.always(secondaryCompetings)],
 		[R.T, R.always([])],
 	])(subject);
 };
@@ -245,10 +257,17 @@ export const optionsManager = {
 			R.propEq(currentOption.id, 'id'),
 			availableActions,
 		);
-		const currentSubject = R.path(namePath, currentOption) as string;
+		const currentSubject = String(R.path(namePath, currentOption));
 		const competingOptions: string[] = R.cond([
 			[R.equals('global'), R.always(R.append('skip-unused', mainCompetings))],
-			[R.equals('skip-unused'), R.always(['global', 'skip-unused'])],
+			[
+				R.equals('skip-unused'),
+				R.always(['global', 'skip-unused', 'show-history']),
+			],
+			[
+				R.equals('show-history'),
+				R.always([...secondaryCompetings, ...mainCompetings]),
+			],
 			[R.T, R.always(mainCompetings)],
 		])(currentSubject);
 

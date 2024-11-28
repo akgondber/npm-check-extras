@@ -3,9 +3,13 @@
 	"compilerOptions": {
 		"outDir": "dist",
 		"jsx": "react",
-		"lib": ["ES2021", "ES2021.String"],
-		"strict": true,
-		"useUnknownInCatchVariables": false
+		"module": "NodeNext",
+		"lib": ["ES2021", "ES2021.String", "ES2022"],
+		"strict": true
+		// "useUnknownInCatchVariables": false
 	},
-	"include": ["source"]
+	"include": ["source"],
+	"ts-node": {
+		"esm": true
+	}
 }

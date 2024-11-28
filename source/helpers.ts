@@ -57,6 +57,8 @@ const toggleActionItem = R.over(R.lensProp<Action>('isSelected'), R.not);
 const selectAction = R.set(R.lensProp<Action>('isSelected'), true);
 const unselectAction = R.set(R.lensProp<Action>('isSelected'), false);
 const getSelected = R.filter(value => R.equals(true, value));
+const markInView = R.set(R.lensProp<FocusableItem>('inView'), true);
+const unmarkInView = R.set(R.lensProp<FocusableItem>('inView'), false);
 const getButtonColor = (name: string) =>
 	focusableItemsManager.isActive(name)
 		? colors.activeButton.color
@@ -65,6 +67,8 @@ const getButtonBgColor = (name: string) =>
 	focusableItemsManager.isActive(name)
 		? colors.activeButton.bg
 		: colors.button.bg;
+
+const getPanelColor = (result: boolean) => (result ? 'green' : 'grey');
 
 export {
 	getId,
@@ -87,4 +91,7 @@ export {
 	getPreviousIndex,
 	selectAction,
 	unselectAction,
+	getPanelColor,
+	markInView,
+	unmarkInView,
 };

@@ -7,6 +7,7 @@ const statuses = {
 	waiting: 'WAITING',
 	done: 'DONE',
 	failed: 'FAILED',
+	info: 'INFO',
 } as const;
 
 type AppStatus = (typeof statuses)[keyof typeof statuses];
@@ -21,6 +22,7 @@ export const statusToMessage = R.zipObj(Object.values(statuses), [
 	'Set up desired options',
 	'Packages were inspected, check out the results',
 	'Some error occured while checking dependencies',
+	'Displaying information',
 ]);
 
 export const $status = map<ActionStatus>({
@@ -43,6 +45,9 @@ const isDoneStatus = computed($status, status =>
 const isFailedStatus = computed($status, status =>
 	ramdaUtils.isFailedStatus(status),
 );
+const isInfoStatus = computed($status, status =>
+	ramdaUtils.isInfoStatus(status),
+);
 
 export const statusesManager = {
 	setFetching: action($status, 'setFetching', store => {
@@ -57,8 +62,14 @@ export const statusesManager = {
 	isFailed() {
 		return isFailedStatus.get();
 	},
+	isInfo() {
+		return isInfoStatus.get();
+	},
 	setWaiting: action($status, 'setWaiting', store => {
 		setIfDiffers(store, statuses.waiting);
+	}),
+	setInfo: action($status, 'setInfo', store => {
+		setIfDiffers(store, statuses.info);
 	}),
 	setDone: action($status, 'setDone', store => {
 		setIfDiffers(store, statuses.done);

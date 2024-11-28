@@ -5,11 +5,13 @@ import {useStore} from '@nanostores/react';
 import * as R from 'ramda';
 import figureSet from 'figures';
 import type {SpinnerName} from 'cli-spinners';
+import {SuccessText, ErrorText} from './components/TextItem.js';
 import {
 	getButtonBgColor,
 	getButtonColor,
 	getCommandFromSentence,
 	getId,
+	getPanelColor,
 	isAvailableChar,
 	removeUrl,
 } from './helpers.js';
@@ -30,6 +32,11 @@ import {
 } from './store/focusable-items.js';
 import {type Action} from './types.js';
 import RU from './ramda-utils.js';
+import OperationsHistory from './components/OperationsHistory.js';
+import {
+	$historyItems,
+	historyActionsManager as HAM,
+} from './store/history-items.js';
 
 type Props = {
 	readonly isShowPackages?: boolean;
@@ -38,29 +45,8 @@ type Props = {
 	readonly isGlobal?: boolean;
 	readonly isProduction?: boolean;
 	readonly isSkipUnused?: boolean;
+	readonly isShowHistory?: boolean;
 };
-
-type TextItem = {
-	readonly text?: string;
-};
-
-function SuccessText({text}: TextItem) {
-	return (
-		<Text>
-			<Text color="green">{figureSet.tick} </Text>
-			{text}
-		</Text>
-	);
-}
-
-function ErrorText({text}: TextItem) {
-	return (
-		<Text>
-			<Text color="red">{figureSet.cross} </Text>
-			{text}
-		</Text>
-	);
-}
 
 export default function App({
 	isShowPackages,
@@ -69,9 +55,11 @@ export default function App({
 	isGlobal,
 	isStoreHistory,
 	isSkipUnused,
+	isShowHistory,
 }: Props) {
 	const availableActions = useStore($availableActions);
 	const allItems = useStore($allItems);
+	const historyItems = useStore($historyItems);
 	useStore($focusableItems);
 	const panelStepper = useStore($panelStepper);
 	const userInput = useStore($userInput);
@@ -96,6 +84,8 @@ export default function App({
 			/* eslint-enable no-inner-declarations */
 
 			fetchData(); // eslint-disable-line @typescript-eslint/no-floating-promises
+		} else if (isShowHistory) {
+			HAM.fetchHistory();
 		}
 
 		const unsubsribeUserInput = $userInput.subscribe(value => {
@@ -112,17 +102,29 @@ export default function App({
 		isGlobal,
 		isStoreHistory,
 		isSkipUnused,
+		isShowHistory,
 	]);
 
 	/* eslint-disable complexity */
 	useInput(async (input, key) => {
 		if (key.return) {
 			if (focusableItemsManager.isPanelActive('options-panel')) {
-				inputActions.clear();
-				PAM.setWaiting();
-				await PAM.checkPackages();
-				packagesActions.activateFirstPackage();
-				focusableItemsManager.activateByName('packages-panel');
+				if (optionsManager.isSelectedByName('show-history')) {
+					statusesManager.setInfo();
+					// focusableItemsManager.unmarkInViewByName('packages-panel');
+					// focusableItemsManager.markInViewByName('history-panel');
+					// focusableItemsManager.activateByName('history-panel');
+					HAM.fetchHistory();
+					focusableItemsManager.activateByName('packages-panel');
+				} else {
+					focusableItemsManager.activateByName('packages-panel');
+					// focusableItemsManager.unmarkInViewByName('history-panel');
+					// focusableItemsManager.markInViewByName('packages-panel');
+					inputActions.clear();
+					PAM.setWaiting();
+					await PAM.checkPackages();
+					packagesActions.activateFirstPackage();
+				}
 			} else if (
 				focusableItemsManager.isPanelActive('packages-panel') &&
 				R.count(RU.isSelected, allItems) > 0
@@ -148,13 +150,21 @@ export default function App({
 			if (focusableItemsManager.isPanelActive('options-panel')) {
 				optionsManager.activateNextOption();
 			} else if (focusableItemsManager.isPanelActive('packages-panel')) {
-				packagesActions.activateNextPackage();
+				if (statusesManager.isInfo()) {
+					HAM.showNext();
+				} else {
+					packagesActions.activateNextPackage();
+				}
 			}
 		} else if (key.upArrow) {
 			if (focusableItemsManager.isPanelActive('options-panel')) {
 				optionsManager.activatePreviousOption();
 			} else if (focusableItemsManager.isPanelActive('packages-panel')) {
-				packagesActions.activatePreviousPackage();
+				if (statusesManager.isInfo()) {
+					HAM.showPrevious();
+				} else {
+					packagesActions.activatePreviousPackage();
+				}
 			}
 		} else if (input === ' ') {
 			if (focusableItemsManager.isPanelActive('packages-panel')) {
@@ -289,132 +299,149 @@ export default function App({
 							color={getButtonColor('check-packages')}
 							backgroundColor={getButtonBgColor('check-packages')}
 						>
-							Check dependencies
+							{optionsManager.isSelectedByName('show-history')
+								? 'Show history'
+								: 'Check dependencies'}
 						</Text>
 					)}
 				</Box>
 			</Box>
 			{(statusesManager.isDone() || statusesManager.isFailed()) &&
-				!statusesManager.isFetching() && (
-					<Box
-						borderStyle="single"
-						borderColor={
-							focusableItemsManager.isPanelActive('packages-panel')
-								? 'green'
-								: 'gray'
-						}
-						flexDirection="column"
-					>
-						<Box flexDirection="column">
-							{!statusesManager.isFetching() && allItems.length > 0 && (
-								<Text>
-									<Text bold>{figureSet.arrowUp}</Text> and{' '}
-									<Text bold>{figureSet.arrowDown}</Text> to activate the next
-									package
-									<Text bold>
-										{' '}
-										&lt;space&gt; - select/unselect active package&nbsp;
+			!statusesManager.isFetching() ? (
+				<Box
+					borderStyle="single"
+					borderColor={
+						focusableItemsManager.isPanelActive('packages-panel')
+							? 'green'
+							: 'gray'
+					}
+					flexDirection="column"
+				>
+					<Box flexDirection="column">
+						{!statusesManager.isFetching() && allItems.length > 0 && (
+							<Text>
+								<Text bold>{figureSet.arrowUp}</Text> and{' '}
+								<Text bold>{figureSet.arrowDown}</Text> to activate the next
+								package
+								<Text bold>
+									{' '}
+									&lt;space&gt; - select/unselect active package&nbsp;
+								</Text>
+								{focusableItemsManager.isActive('update') ? (
+									<Text bold> &lt;Enter&gt; - submit</Text>
+								) : (
+									<Text>
+										<Text bold>&lt;tab&gt;</Text> - activate{' '}
+										<Text bold>Submit</Text> button
 									</Text>
-									{focusableItemsManager.isActive('update') ? (
-										<Text bold> &lt;Enter&gt; - submit</Text>
-									) : (
-										<Text>
-											<Text bold>&lt;tab&gt;</Text> - activate{' '}
-											<Text bold>Submit</Text> button
-										</Text>
-									)}
-								</Text>
-							)}
-							{statusesManager.isFetching() ? (
-								<SpinnerItem text="Running" kind="dots9" />
-							) : allItems.length > 0 ? (
-								<Text>
-									{figureSet.triangleDown} The following packages could be
-									updated/deleted {figureSet.triangleDown}
-									&nbsp;Select necessary ones and submit to update/delete them.
-								</Text>
-							) : (
-								!PAM.isWaiting() && (
-									<Text>There are no packages to update/delete.</Text>
-								)
-							)}
+								)}
+							</Text>
+						)}
+						{statusesManager.isFetching() ? (
+							<SpinnerItem text="Running" kind="dots9" />
+						) : allItems.length > 0 ? (
+							<Text>
+								{figureSet.triangleDown} The following packages could be
+								updated/deleted {figureSet.triangleDown}
+								&nbsp;Select necessary ones and submit to update/delete them.
+							</Text>
+						) : (
+							!PAM.isWaiting() && (
+								<Text>There are no packages to update/delete.</Text>
+							)
+						)}
+					</Box>
+					<Box flexDirection="column">
+						<Box flexDirection="column" marginTop={1}>
+							{getDisplayValues()}
 						</Box>
-						<Box flexDirection="column">
-							<Box flexDirection="column" marginTop={1}>
-								{getDisplayValues()}
-							</Box>
-							<Box flexDirection="column" marginTop={1}>
-								<Box>
-									<Text
-										color="#90cba5"
-										italic={focusableItemsManager.isActive('packages-panel')}
-									>
-										Type something to select items by filter query:&nbsp;
-									</Text>
-									{focusedChar === 0 ? (
-										<Text>
-											<Text inverse>{inputValue.slice(0, 1) || ' '}</Text>
-											<Text>{inputValue.slice(1, inputValue.length)}</Text>
-										</Text>
-									) : (
-										<Text>
-											{inputValue.slice(0, focusedChar)}
-											<Text inverse>
-												{focusedChar === inputValue.length
-													? ' '
-													: inputValue.at(focusedChar)}
-											</Text>
-											{focusedChar < inputValue.length - 1 && (
-												<Text>
-													{inputValue.slice(focusedChar + 1, inputValue.length)}
-												</Text>
-											)}
-										</Text>
-									)}
-								</Box>
-							</Box>
+						<Box flexDirection="column" marginTop={1}>
 							<Box>
 								<Text
-									color={getButtonColor('update')}
-									backgroundColor={getButtonBgColor('update')}
+									color="#90cba5"
+									italic={focusableItemsManager.isActive('packages-panel')}
 								>
-									{PAM.isRunning() ? (
-										<SpinnerItem text="Submitting..." />
-									) : (
-										'Submit'
-									)}
+									Type something to select items by filter query:&nbsp;
 								</Text>
-							</Box>
-							<Box>
-								{PAM.isSuccess() ? (
-									<SuccessText />
-								) : PAM.isFailed() ? (
-									<ErrorText />
-								) : null}
-								<Text>
-									{R.cond([
-										[R.invoker(0, 'isWaiting'), R.always('')],
-										[
-											R.invoker(0, 'isRunning'),
-											R.always('Updating selected packages...'),
-										],
-										[
-											R.invoker(0, 'isSuccess'),
-											R.always(
-												'Actions over selected packages have been performed.',
-											),
-										],
-										[
-											R.invoker(0, 'isFailed'),
-											R.always('Some error occured while performing actions.'),
-										],
-										[R.T, R.always('')],
-									])(PAM)}
-								</Text>
+								{focusedChar === 0 ? (
+									<Text>
+										<Text inverse>{inputValue.slice(0, 1) || ' '}</Text>
+										<Text>{inputValue.slice(1, inputValue.length)}</Text>
+									</Text>
+								) : (
+									<Text>
+										{inputValue.slice(0, focusedChar)}
+										<Text inverse>
+											{focusedChar === inputValue.length
+												? ' '
+												: R.nth(focusedChar, inputValue)}
+										</Text>
+										{focusedChar < inputValue.length - 1 && (
+											<Text>
+												{inputValue.slice(focusedChar + 1, inputValue.length)}
+											</Text>
+										)}
+									</Text>
+								)}
 							</Box>
 						</Box>
+						<Box>
+							<Text
+								color={getButtonColor('update')}
+								backgroundColor={getButtonBgColor('update')}
+							>
+								{PAM.isRunning() ? (
+									<SpinnerItem text="Submitting..." />
+								) : (
+									'Submit'
+								)}
+							</Text>
+						</Box>
+						<Box>
+							{PAM.isSuccess() ? (
+								<SuccessText />
+							) : PAM.isFailed() ? (
+								<ErrorText />
+							) : null}
+							<Text>
+								{R.cond([
+									[R.invoker(0, 'isWaiting'), R.always('')],
+									[
+										R.invoker(0, 'isRunning'),
+										R.always('Updating selected packages...'),
+									],
+									[
+										R.invoker(0, 'isSuccess'),
+										R.always(
+											'Actions over selected packages have been performed.',
+										),
+									],
+									[
+										R.invoker(0, 'isFailed'),
+										R.always('Some error occured while performing actions.'),
+									],
+									[R.T, R.always('')],
+								])(PAM)}
+							</Text>
+						</Box>
 					</Box>
-				)}
+				</Box>
+			) : (
+				statusesManager.isInfo() && (
+					<Box
+						borderStyle="single"
+						borderColor={getPanelColor(
+							focusableItemsManager.isActive('packages-panel'),
+						)}
+					>
+						{HAM.hasHistory() ? (
+							<OperationsHistory data={historyItems} />
+						) : (
+							<Text>There is no history yet.</Text>
+						)}
+					</Box>
+				)
+			)}
 		</Box>
 	);
 }

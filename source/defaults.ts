@@ -32,6 +32,11 @@ export const availableActions: ActionItem[] = [
 		displayName: 'Look at global modules',
 		helpMessage: 'Check the versions of your globally installed packages.',
 	},
+	{
+		name: 'show-history',
+		displayName: 'Display dependencies history',
+		helpMessage: 'Display information about previous packages manipualtions',
+	},
 ];
 
 export const colors = {

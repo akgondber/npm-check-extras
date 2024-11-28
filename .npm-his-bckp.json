@@ -1,0 +1,2341 @@
+{
+	"2023-11-25": [
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall ts-node --save-dev",
+			"msg": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete"
+		}
+	],
+	"2023-11-26": [
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.38 --save-dev to go from 18.0.32 to 18.2.38",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.38 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2",
+			"msg": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.38 --save-dev to go from 18.0.32 to 18.2.38",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.38 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.38 --save-dev to go from 18.0.32 to 18.2.38",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.38 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2",
+			"msg": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev",
+			"msg": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.38 --save-dev to go from 18.0.32 to 18.2.38",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.38 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2",
+			"msg": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update"
+		}
+	],
+	"2023-11-27": [
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.38 --save-dev to go from 18.0.32 to 18.2.38",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.38 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2",
+			"msg": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update"
+		}
+	],
+	"2023-11-28": [
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall validate-npm-package-name --save",
+			"msg": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete"
+		},
+		{
+			"ai": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev",
+			"msg": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2",
+			"msg": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev",
+			"msg": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall validate-npm-package-name --save",
+			"msg": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev",
+			"msg": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1",
+			"msg": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall validate-npm-package-name --save",
+			"msg": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall eslint-config-xo-react --save-dev",
+			"msg": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall ts-node --save-dev",
+			"msg": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete"
+		}
+	],
+	"2023-11-30": [
+		{
+			"ai": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev",
+			"msg": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall eslint-config-xo-react --save-dev",
+			"msg": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2",
+			"msg": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev",
+			"msg": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4",
+			"msg": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall eslint-config-xo-react --save-dev",
+			"msg": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete"
+		},
+		{
+			"ai": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1",
+			"msg": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update"
+		},
+		{
+			"ai": "To remove this package: npm uninstall validate-npm-package-name --save",
+			"msg": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		}
+	],
+	"2023-12-01": [
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.39 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.39 --save-dev to go from 18.0.32 to 18.2.39"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.40 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.40 --save-dev to go from 18.0.32 to 18.2.40"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.40 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.40 --save-dev to go from 18.0.32 to 18.2.40"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.40 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.40 --save-dev to go from 18.0.32 to 18.2.40"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		}
+	],
+	"2023-12-02": [
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.40 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.40 --save-dev to go from 18.0.32 to 18.2.40"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.40 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.40 --save-dev to go from 18.0.32 to 18.2.40"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm uninstall @sindresorhus/tsconfig --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall @sindresorhus/tsconfig --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.40 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.40 --save-dev to go from 18.0.32 to 18.2.40"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.41 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.41 --save-dev to go from 18.0.32 to 18.2.41"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.41 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.41 --save-dev to go from 18.0.32 to 18.2.41"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.41 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.41 --save-dev to go from 18.0.32 to 18.2.41"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		}
+	],
+	"2023-12-03": [
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.41 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.41 --save-dev to go from 18.0.32 to 18.2.41"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.41 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.41 --save-dev to go from 18.0.32 to 18.2.41"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.2 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.2 --save-dev to go from 5.2.2 to 5.3.2"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		}
+	],
+	"2023-12-04": [
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.41 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.41 --save-dev to go from 18.0.32 to 18.2.41"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.41 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.41 --save-dev to go from 18.0.32 to 18.2.41"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		}
+	],
+	"2023-12-07": [
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.3 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.3 --save-dev to go from 5.2.2 to 5.3.3"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		}
+	],
+	"2023-12-08": [
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "ava",
+			"message": "Major update available. https://avajs.dev",
+			"command": "npm install ava@6.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install ava@6.0.1 --save-dev to go from 5.3.1 to 6.0.1"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.3 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.3 --save-dev to go from 5.2.2 to 5.3.3"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "ts-node",
+			"message": "Your local install is out of date. https://typestrong.org/ts-node",
+			"command": "npm install ts-node@10.9.2 --save-dev",
+			"operation": "update",
+			"info": "npm install ts-node@10.9.2 --save-dev to go from 10.9.1 to 10.9.2"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.3 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.3 --save-dev to go from 5.2.2 to 5.3.3"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "ts-node",
+			"message": "Your local install is out of date. https://typestrong.org/ts-node",
+			"command": "npm install ts-node@10.9.2 --save-dev",
+			"operation": "update",
+			"info": "npm install ts-node@10.9.2 --save-dev to go from 10.9.1 to 10.9.2"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "ava",
+			"message": "Major update available. https://avajs.dev",
+			"command": "npm install ava@6.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install ava@6.0.1 --save-dev to go from 5.3.1 to 6.0.1"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.3 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.3 --save-dev to go from 5.2.2 to 5.3.3"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.0 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.0 --save-dev to go from 3.0.3 to 3.1.0"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.42 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.42 --save-dev to go from 18.0.32 to 18.2.42"
+		},
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Still using eslint-config-xo-react?",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.3 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.3 --save-dev to go from 5.2.2 to 5.3.3"
+		},
+		{
+			"name": "delay",
+			"message": "Still using delay?",
+			"command": "npm uninstall delay --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall delay --save"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		},
+		{
+			"name": "validate-npm-package-name",
+			"message": "Still using validate-npm-package-name?",
+			"command": "npm uninstall validate-npm-package-name --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall validate-npm-package-name --save"
+		}
+	],
+	"2023-12-09": [
+		{
+			"name": "@types/uuid",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/uuid",
+			"command": "npm install @types/uuid@9.0.7 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/uuid@9.0.7 --save-dev to go from 9.0.6 to 9.0.7"
+		}
+	],
+	"2023-12-10": [
+		{
+			"name": "delay",
+			"message": "Still using delay?",
+			"command": "npm uninstall delay --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall delay --save"
+		},
+		{
+			"name": "delay",
+			"message": "Still using delay?",
+			"command": "npm uninstall delay --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall delay --save"
+		},
+		{
+			"name": "yoctocolors",
+			"message": "Still using yoctocolors?",
+			"command": "npm uninstall yoctocolors --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall yoctocolors --save"
+		},
+		{
+			"name": "figures",
+			"message": "Major update available. https://github.com/sindresorhus/figures#readme",
+			"command": "npm install figures@6.0.1 --save",
+			"operation": "update",
+			"info": "npm install figures@6.0.1 --save to go from 5.0.0 to 6.0.1"
+		},
+		{
+			"name": "ts-node",
+			"message": "Your local install is out of date. https://typestrong.org/ts-node",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "xo",
+			"message": "NonSemver update available. https://github.com/xojs/xo#readme",
+			"command": "npm install xo@0.56.0 --save-dev",
+			"operation": "update",
+			"info": "npm install xo@0.56.0 --save-dev to go from 0.54.2 to 0.56.0"
+		},
+		{
+			"name": "object-path",
+			"message": "Still using object-path?",
+			"command": "npm uninstall object-path --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall object-path --save"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.1 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.1 --save-dev to go from 3.0.3 to 3.1.1"
+		},
+		{
+			"name": "ts-node",
+			"message": "Your local install is out of date. https://typestrong.org/ts-node",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "prettier",
+			"message": "Your local install is out of date. https://prettier.io",
+			"command": "npm install prettier@3.1.1 --save-dev",
+			"operation": "update",
+			"info": "npm install prettier@3.1.1 --save-dev to go from 3.0.3 to 3.1.1"
+		},
+		{
+			"name": "@types/ramda",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ramda",
+			"command": "npm install @types/ramda@0.29.9 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ramda@0.29.9 --save-dev to go from 0.29.8 to 0.29.9"
+		},
+		{
+			"name": "yoctocolors",
+			"message": "Not installed.",
+			"command": "npm uninstall yoctocolors --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall yoctocolors --save"
+		},
+		{
+			"name": "typescript",
+			"message": "Your local install is out of date. https://www.typescriptlang.org/",
+			"command": "npm install typescript@5.3.3 --save-dev",
+			"operation": "update",
+			"info": "npm install typescript@5.3.3 --save-dev to go from 5.2.2 to 5.3.3"
+		},
+		{
+			"name": "eslint-config-xo-react",
+			"message": "Not installed.",
+			"command": "npm uninstall eslint-config-xo-react --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall eslint-config-xo-react --save-dev"
+		},
+		{
+			"name": "delay",
+			"message": "Still using delay?",
+			"command": "npm uninstall delay --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall delay --save"
+		},
+		{
+			"name": "yoctocolors",
+			"message": "Still using yoctocolors?",
+			"command": "npm uninstall yoctocolors --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall yoctocolors --save"
+		},
+		{
+			"name": "@types/react",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+			"command": "npm install @types/react@18.2.43 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/react@18.2.43 --save-dev to go from 18.0.32 to 18.2.43"
+		},
+		{
+			"name": "ts-node",
+			"message": "Your local install is out of date. https://typestrong.org/ts-node",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "eslint-plugin-prettier",
+			"message": "Your local install is out of date. https://github.com/prettier/eslint-plugin-prettier#readme",
+			"command": "npm install eslint-plugin-prettier@5.0.1 --save-dev",
+			"operation": "update",
+			"info": "npm install eslint-plugin-prettier@5.0.1 --save-dev to go from 5.0.0 to 5.0.1"
+		},
+		{
+			"name": "@sindresorhus/tsconfig",
+			"message": "Major update available. https://github.com/sindresorhus/tsconfig#readme",
+			"command": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev",
+			"operation": "update",
+			"info": "npm install @sindresorhus/tsconfig@5.0.0 --save-dev to go from 3.0.1 to 5.0.0"
+		},
+		{
+			"name": "@types/ink-testing-library",
+			"message": "Your local install is out of date. https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ink-testing-library",
+			"command": "npm install @types/ink-testing-library@1.0.4 --save-dev",
+			"operation": "update",
+			"info": "npm install @types/ink-testing-library@1.0.4 --save-dev to go from 1.0.3 to 1.0.4"
+		},
+		{
+			"name": "ts-node",
+			"message": "Your local install is out of date. https://typestrong.org/ts-node",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "yoctocolors",
+			"message": "Not installed.",
+			"command": "npm uninstall yoctocolors --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall yoctocolors --save"
+		},
+		{
+			"name": "delay",
+			"message": "Still using delay?",
+			"command": "npm uninstall delay --save",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall delay --save"
+		}
+	],
+	"2024-03-02": [
+		{
+			"name": "ts-node",
+			"message": "Still using ts-node?",
+			"command": "npm uninstall ts-node --save-dev",
+			"operation": "delete",
+			"info": "To remove this package: npm uninstall ts-node --save-dev"
+		},
+		{
+			"name": "ava",
+			"message": "Your local install is out of date. https://avajs.dev",
+			"command": "npm install ava@6.1.2 --save-dev",
+			"operation": "update",
+			"info": "npm install ava@6.1.2 --save-dev to go from 6.0.1 to 6.1.2"
+		}
+	]
+}

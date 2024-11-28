@@ -11,6 +11,7 @@ const isSelected = R.propEq(true, 'isSelected');
 const isFetchingStatus = R.propEq('FETCHING', 'status');
 const isDoneStatus = R.propEq('DONE', 'status');
 const isFailedStatus = R.propEq('FAILED', 'status');
+const isInfoStatus = R.propEq('INFO', 'status');
 const notEquals = (a: string) => (b: string) => R.not(R.equals(a, b));
 const flipIncludes = R.flip(R.includes);
 const getIndex = (foundIndex: number): number =>
@@ -43,6 +44,7 @@ const ramdaUtils = {
 	isFetchingStatus,
 	isDoneStatus,
 	isFailedStatus,
+	isInfoStatus,
 	flipIncludes,
 	getIndex,
 	adjustAll,

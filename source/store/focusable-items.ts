@@ -2,7 +2,7 @@ import * as R from 'ramda';
 import {atom, action} from 'nanostores';
 import RangeStepper from 'range-stepper';
 import {type FocusableItem} from '../types.js';
-import {activate, deactivate} from '../helpers.js';
+import {activate, deactivate, markInView, unmarkInView} from '../helpers.js';
 import ramdaUtils from '../ramda-utils.js';
 
 export const $focusableItems = atom<FocusableItem[]>([
@@ -84,6 +84,36 @@ const deactivateByName = action(
 			store.set(
 				R.map(R.ifElse(R.propEq(name, 'name'), deactivate, activate), items),
 			);
+		}
+
+		return store.get();
+	},
+);
+
+const markInViewByName = action(
+	$focusableItems,
+	'markInViewByName',
+	(store, name: string) => {
+		const items = store.get();
+		const foundIndex = R.findIndex(R.propEq(name, 'name'), items);
+
+		if (foundIndex > -1) {
+			store.set(R.adjust(foundIndex, markInView, items));
+		}
+
+		return store.get();
+	},
+);
+
+const unmarkInViewByName = action(
+	$focusableItems,
+	'markInViewByName',
+	(store, name: string) => {
+		const items = store.get();
+		const foundIndex = R.findIndex(R.propEq(name, 'name'), items);
+
+		if (foundIndex > -1) {
+			store.set(R.adjust(foundIndex, unmarkInView, items));
 		}
 
 		return store.get();
@@ -200,15 +230,25 @@ const belongsToPanel = (name: string, panelName: string) => {
 const activateNext = action($focusableItems, 'activateNext', store => {
 	const focusableItems = store.get();
 	const activeItems = R.filter(R.propEq(true, 'isActive'), focusableItems);
-	const currentFocusedItem = R.reduce(
-		R.maxBy(R.propOr(0, 'id')),
-		R.head(activeItems),
-		activeItems,
-	);
+	// const currentFocusedItem = R.reduce(
+	// 	R.maxBy(R.propOr(0, 'id')),
+	// 	R.head(activeItems),
+	// 	activeItems,
+	// ) as FocusableItem;
 
 	const ids = R.pluck('id', focusableItems);
 	const minId = R.reduce(R.min, Number.POSITIVE_INFINITY, ids) as number;
 	const maxId = R.reduce(R.max, Number.NEGATIVE_INFINITY, ids) as number;
+	const currentFocusedItem = R.reduce(
+		R.maxBy(R.propOr(0, 'id')),
+		R.head(activeItems),
+		activeItems,
+	) as FocusableItem;
+
+	// R.head(R.filter<FocusableItem, Array<FocusableItem>>((la) => {
+	// 	return la.isActive;
+	// }, activeItems));
+
 	const current = R.dec(
 		R.isNil(currentFocusedItem) ? maxId : currentFocusedItem.id,
 	);
@@ -220,6 +260,7 @@ const activateNext = action($focusableItems, 'activateNext', store => {
 	});
 	const idToActivate = R.inc(stepper.next().dup().value);
 	const target = findById(idToActivate);
+
 	const fir = findFirstItemBelongingToPanel(target.name);
 	const idsToActivate = [target.id];
 	if (R.isNotNil(fir)) {
@@ -284,4 +325,6 @@ export const focusableItemsManager = {
 	activateNext,
 	findById,
 	findByName,
+	markInViewByName,
+	unmarkInViewByName,
 };

@@ -8,9 +8,15 @@
 $ npm install --global npm-check-extras
 ```
 
-## Demo
+## Demos
+
+### Basic demo
 
 ![demo](media/demo.gif)
+
+### Show history
+
+![show-history-demo](media/show-history-demo.gif)
 
 ## CLI
 

@@ -67,7 +67,7 @@ export const getUpdateCandidatePackages = async (): Promise<
 		await execa('npx', ['npm-check', ...args]);
 	} catch (error: any) {
 		if (isExecaError(error)) {
-			const lines = error.stdout.split('\n');
+			const lines = String(error.stdout).split('\n');
 
 			for (const curr of R.splitWhenever(R.equals(''), lines)) {
 				const parts = R.head(curr)!.split(/\s{2,}/);

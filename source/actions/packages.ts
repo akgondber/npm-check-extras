@@ -44,7 +44,7 @@ const activePackageIndex = computed($allItems, allItems =>
 	R.findIndex((item: PackageDetail) => RU.isActive(item), allItems),
 );
 
-const activateNextPackage = action($allItems, 'activateNextPackage', store => {
+const activateNextPackage = action($allItems, ' ', store => {
 	const allItems = store.get();
 	const currentIndex = activePackageIndex.get();
 	const targetIndex = getNextIndex(currentIndex, allItems.length);
