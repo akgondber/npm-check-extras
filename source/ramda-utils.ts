@@ -33,6 +33,14 @@ const pathIncludes = R.curry((items: any[], path: string[], value: any) =>
 	R.any((item: any) => R.pathEq(item, path, value), items),
 );
 
+const appearanceCount = (value: string, items: string[]): number => {
+	return R.count(R.equals(value), items);
+};
+
+const aCount = (value: string, items: string[]): number => {
+	return appearanceCount(value, items);
+};
+
 const ramdaUtils = {
 	eqWaiting,
 	eqRunning,
@@ -49,6 +57,7 @@ const ramdaUtils = {
 	getIndex,
 	adjustAll,
 	pathIncludes,
+	aCount,
 };
 
 export default ramdaUtils;

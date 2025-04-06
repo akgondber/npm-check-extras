@@ -70,6 +70,11 @@ const getButtonBgColor = (name: string) =>
 
 const getPanelColor = (result: boolean) => (result ? 'green' : 'grey');
 
+const operationCountsMapping = {
+	update: 'Updated',
+	delete: 'Deleted',
+};
+
 export {
 	getId,
 	isAvailableChar,
@@ -94,4 +99,5 @@ export {
 	getPanelColor,
 	markInView,
 	unmarkInView,
+	operationCountsMapping,
 };

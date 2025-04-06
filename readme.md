@@ -18,6 +18,10 @@ $ npm install --global npm-check-extras
 
 ![show-history-demo](media/show-history-demo.gif)
 
+### Displaying stats demo
+
+![displaying-history-demo](media/show-history-demo.gif)
+
 ## CLI
 
 ```
@@ -60,6 +64,16 @@ Checking project's dependencies.
 Checking globally installed dependencies, then select packages by `m` filter.
 
 ![Check global dependencies](media/screenshot-2.png)
+
+Displaying only stats and exit by `--only-stats` or `--report` flag
+
+> This is applicable if you use --store-history option otherwise stats could not be collected
+
+![Show stats](media/stats-option.png)
+
+Displaing stats using `--date` flag to show stats only for specified date
+
+![Show stats for date](media/stats-option-with-date-flag.png)
 
 ## What's under the hood?
 
