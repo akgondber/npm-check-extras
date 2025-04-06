@@ -18,6 +18,10 @@ $ npm install --global npm-check-extras
 
 ![show-history-demo](media/show-history-demo.gif)
 
+### Displaying stats demo
+
+![displaying-history-demo](media/show-history-demo.gif)
+
 ## CLI
 
 ```
@@ -35,6 +39,9 @@ $ npm-check-extras --help
         --global          Look at global modules
         --store-history   Store info about packages actions history to a file (.npm-check-history.json)
         --skip-unused     Skip check for unused packages
+        --only-stats      Display only stats for updated/deleted packages and exit (it is applicable when you use --store-history option)
+        --names           Show package names when --only-stats option is being used
+        --date            Show stats only for specific date when --only-stats option is being used
 
 
   Examples
@@ -49,6 +56,10 @@ $ npm-check-extras --help
     $ npm-check-extras --check --global
     $ npm-check-extras -c -d
     $ npm-check-extras --skup-unused
+    $ npm-check-extras --only-stats
+    $ npm-check-extras --report
+    $ npm-check-extras --report --names
+    $ npm-check-extras --report --names --date 2024-11-27
 ```
 
 ## Screenshots
@@ -60,6 +71,16 @@ Checking project's dependencies.
 Checking globally installed dependencies, then select packages by `m` filter.
 
 ![Check global dependencies](media/screenshot-2.png)
+
+Displaying only stats and exit by `--only-stats` or `--report` flag
+
+> This is applicable if you use --store-history option otherwise stats could not be collected
+
+![Show stats](media/stats-option.png)
+
+Displaing stats using `--date` flag to show stats only for specified date
+
+![Show stats for date](media/stats-option-with-date-flag.png)
 
 ## What's under the hood?
 

@@ -53,6 +53,23 @@ type HistoryData = {
 	items: OperationItem[];
 };
 
+type OpString = 'delete' | 'update';
+
+type HistoryEntry = {
+	name: string;
+	message: string;
+	command: string;
+	operation: OpString;
+	info: string;
+};
+
+type HistoryItems = Record<string, HistoryEntry[]>;
+
+type StatItem = {
+	count: number;
+	packages: string[];
+};
+
 export type {
 	ActionItem,
 	Action,
@@ -64,4 +81,8 @@ export type {
 	OperationItem,
 	HistoryOperationItem,
 	HistoryData,
+	HistoryItems,
+	HistoryEntry,
+	OpString,
+	StatItem,
 };

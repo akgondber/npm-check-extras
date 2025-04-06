@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as R from 'ramda';
 import {v4 as uuidv4} from 'uuid';
-import type {OperationItem} from './types.js';
+import type {HistoryItems, OperationItem} from './types.js';
 
 const hasHistory = () => {
 	// eslint-disable-next-line n/prefer-global/process
@@ -10,17 +10,14 @@ const hasHistory = () => {
 	return fs.existsSync(pathToFile);
 };
 
-const readHistory = () => {
+const readHistory = (): HistoryItems | undefined => {
 	// eslint-disable-next-line n/prefer-global/process
 	const pathToFile = path.join(process.cwd(), '.npm-check-history.json');
 
 	if (hasHistory())
-		return JSON.parse(fs.readFileSync(pathToFile).toString()) as Record<
-			string,
-			string
-		>;
+		return JSON.parse(fs.readFileSync(pathToFile).toString()) as HistoryItems;
 
-	return null;
+	return undefined;
 };
 
 const getGroupedHistory = () => {
@@ -32,9 +29,9 @@ const getGroupedHistory = () => {
 	return JSON.stringify(content);
 };
 
-const getHistoryJson = () => {
+const getHistoryJson = (): HistoryItems => {
 	const content = readHistory();
-	return R.defaultTo({}, content);
+	return R.defaultTo({} as HistoryItems, content);
 };
 
 const formatHistoryData = (data: Record<string, any>) => {
