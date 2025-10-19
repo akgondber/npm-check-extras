@@ -3,14 +3,20 @@ import path from 'node:path';
 import * as R from 'ramda';
 import {atom, computed} from 'nanostores';
 import {execa, execaCommand, type ExecaError} from 'execa';
-import {type PackageDetail} from '../types.js';
+import {format} from 'date-fns';
+import type {
+	DependencyPair,
+	PackageAction,
+	PossibleDependencyPair,
+	PackageDetail,
+} from '../types.js';
 import {getCommandFromSentence} from '../helpers.js';
-import ramdaUtils from '../ramda-utils.js';
+import RU from '../ramda-utils.js';
+import {dependenciesKinds} from '../constants.js';
+import {travelServices} from '../services/index.js';
 import {optionsManager} from './options.js';
 import {$submittedInput} from './submitted-input.js';
 import {statusesManager} from './status.js';
-
-type PackageAction = 'WAITING' | 'RUNNING' | 'SUCCESS' | 'FAILED';
 
 export const $allItems = atom<PackageDetail[]>([]);
 
@@ -124,10 +130,11 @@ export const runUpdate = async () => {
 	const needsToStoreHistory = optionsManager.isSelectedByName('store-history');
 	const itemsToUpdate = R.filter(R.propEq(true, 'isSelected'), $allItems.get());
 	packageActionsManager.setRunning();
+	let dependenciesValues: DependencyPair[] = [];
 
 	try {
 		const pathToFile = path.join(process.cwd(), '.npm-check-history.json'); // eslint-disable-line n/prefer-global/process
-		const today = new Date().toISOString().slice(0, 10);
+		const today = format(new Date().toISOString(), 'yyyy-MM-dd HH:mm:ss');
 		let previousContent: Record<string, string> = {};
 		if (fs.existsSync(pathToFile))
 			previousContent = JSON.parse(
@@ -138,6 +145,12 @@ export const runUpdate = async () => {
 			today,
 			previousContent,
 		);
+		if (needsToStoreHistory) {
+			const packageJsonContent = await travelServices.readPackageJson();
+			dependenciesValues = R.toPairs(
+				R.pick(dependenciesKinds, packageJsonContent),
+			);
+		}
 
 		await Promise.all(
 			R.map(async (selectedItem: PackageDetail) => {
@@ -146,8 +159,22 @@ export const runUpdate = async () => {
 				await execaCommand(actionValue);
 
 				if (needsToStoreHistory) {
+					const foundPair: PossibleDependencyPair = R.find(
+						(pair: DependencyPair) =>
+							R.keys(R.last(pair)).includes(selectedItem.name),
+						dependenciesValues,
+					);
+					let packageDepTargetKey = 'dependencies';
+					let packageSemverValue;
+					if (!R.isNil(foundPair)) {
+						packageDepTargetKey = R.head(foundPair);
+						packageSemverValue = R.prop(selectedItem.name, R.last(foundPair));
+					}
+
 					contentToSave.push({
 						name: selectedItem.name,
+						kindOfDependencyKey: packageDepTargetKey,
+						semverValue: packageSemverValue,
 						message: selectedItem.message,
 						command: getCommandFromSentence(selectedItem.actionInfo),
 						operation: getOperationFromInfo(selectedItem.actionInfo),
@@ -179,10 +206,10 @@ export const hasPackages = computed(
 export const packageActionsManager = {
 	runUpdate,
 	checkPackages,
-	isWaiting: () => ramdaUtils.eqWaiting($actionStatus.get()),
-	isRunning: () => ramdaUtils.eqRunning($actionStatus.get()),
-	isSuccess: () => ramdaUtils.eqSuccess($actionStatus.get()),
-	isFailed: () => ramdaUtils.eqFailed($actionStatus.get()),
+	isWaiting: () => RU.eqWaiting($actionStatus.get()),
+	isRunning: () => RU.eqRunning($actionStatus.get()),
+	isSuccess: () => RU.eqSuccess($actionStatus.get()),
+	isFailed: () => RU.eqFailed($actionStatus.get()),
 	setWaiting() {
 		$actionStatus.set('WAITING');
 	},

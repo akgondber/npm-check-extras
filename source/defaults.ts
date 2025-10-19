@@ -37,6 +37,12 @@ export const availableActions: ActionItem[] = [
 		displayName: 'Display dependencies history',
 		helpMessage: 'Display information about previous packages manipualtions',
 	},
+	{
+		name: 'revert-updates',
+		displayName: 'Time travel to revert changes in package.json',
+		helpMessage:
+			'Time travel to revert changes in package.json from stored history',
+	},
 ];
 
 export const colors = {
@@ -45,7 +51,7 @@ export const colors = {
 		color: '#603f83',
 	},
 	activeButton: {
-		bg: '#FEE715',
-		color: '#101820',
+		bg: '#FDF6F6', // '#FEE715',
+		color: '#002C54', // '#101820',
 	},
 };

@@ -1,5 +1,5 @@
 import * as R from 'ramda';
-import {atom, action} from 'nanostores';
+import {atom, action, computed} from 'nanostores';
 import RangeStepper from 'range-stepper';
 import {type FocusableItem} from '../types.js';
 import {activate, deactivate, markInView, unmarkInView} from '../helpers.js';
@@ -57,16 +57,15 @@ const activateByName = action(
 			}
 
 			// Const predicate = item.kind === 'panel' ? R.whereAny({ id: R.equals() })
-			store.set(
-				R.map(
-					R.ifElse(
-						R.where({id: R.flip(R.includes)(idsToActivate)}),
-						activate,
-						deactivate,
-					),
-					items,
+			const newVa = R.map(
+				R.ifElse(
+					R.where({id: R.flip(R.includes)(idsToActivate)}),
+					activate,
+					deactivate,
 				),
+				items,
 			);
+			store.set(newVa);
 		}
 
 		return store.get();
@@ -153,6 +152,10 @@ const isActive = (name: string) => {
 		focusableItems,
 	);
 };
+
+export const $activeFocusableItems = computed($focusableItems, focusableItems =>
+	R.filter(R.propEq(true, 'isActive'), focusableItems),
+);
 
 const isPanelActive = (name: string) => {
 	const panelItem = findByName(name);

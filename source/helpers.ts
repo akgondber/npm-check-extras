@@ -74,6 +74,17 @@ const operationCountsMapping = {
 	update: 'Updated',
 	delete: 'Deleted',
 };
+const prepSpaces = (value: string) => {
+	return `  ${value}`;
+};
+
+const wrasp = (value: string) => {
+	return ` ${value} `;
+};
+
+const preJson = (value: Record<string, any>) => {
+	return JSON.stringify(value, null, 2);
+};
 
 export {
 	getId,
@@ -100,4 +111,7 @@ export {
 	markInView,
 	unmarkInView,
 	operationCountsMapping,
+	prepSpaces,
+	wrasp,
+	preJson,
 };

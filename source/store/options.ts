@@ -46,7 +46,9 @@ const secondaryCompetings = [
 	'production',
 	'dev-only',
 	'show-history',
+	'revert-updates',
 ];
+const notRelatedToExtraction = ['show-history', 'revert-updates'];
 const getCompetingOptions = (subject: string): string[] => {
 	return R.cond([
 		[R.equals('global'), R.always(R.append('skip-unused', mainCompetings))],
@@ -54,7 +56,7 @@ const getCompetingOptions = (subject: string): string[] => {
 		[R.equals('store-history'), R.always(['show-history'])],
 		[
 			RU.flipIncludes(mainCompetings),
-			R.always(R.append('show-history', mainCompetings)),
+			R.always([...notRelatedToExtraction, ...mainCompetings]),
 		],
 		[RU.flipIncludes(secondaryCompetings), R.always(secondaryCompetings)],
 		[R.T, R.always([])],
@@ -259,7 +261,10 @@ export const optionsManager = {
 		);
 		const currentSubject = String(R.path(namePath, currentOption));
 		const competingOptions: string[] = R.cond([
-			[R.equals('global'), R.always(R.append('skip-unused', mainCompetings))],
+			[
+				R.equals('global'),
+				R.always([...notRelatedToExtraction, 'skip-unused', ...mainCompetings]),
+			],
 			[
 				R.equals('skip-unused'),
 				R.always(['global', 'skip-unused', 'show-history']),
@@ -268,37 +273,88 @@ export const optionsManager = {
 				R.equals('show-history'),
 				R.always([...secondaryCompetings, ...mainCompetings]),
 			],
-			[R.T, R.always(mainCompetings)],
+			[
+				RU.flipIncludes(mainCompetings),
+				optionName => [
+					...R.without([optionName], mainCompetings),
+					...notRelatedToExtraction,
+				],
+			],
+			[
+				R.equals('revert-updates'),
+				R.always([...secondaryCompetings, ...mainCompetings]),
+			],
+			[R.equals('production'), R.always(['revert-updates'])],
+			[
+				RU.flipIncludes(['production', 'dev-only']),
+				R.always(notRelatedToExtraction),
+			],
+			[R.T, R.always([])],
 		])(currentSubject);
 
-		if (
-			!R.includes(currentSubject, competingOptions) ||
-			R.propEq(true, 'isSelected', currentOption) ||
-			R.all(curr =>
-				R.propEq(
-					false,
-					'isSelected',
-					R.find(R.pathEq(curr, namePath), availableActions)!,
-				),
-			)(competingOptions)
-		) {
+		// if (
+		// 	!R.includes(currentSubject, competingOptions) ||
+		// 	R.propEq(true, 'isSelected', currentOption) ||
+		// 	R.all(curr =>
+		// 		R.propEq(
+		// 			false,
+		// 			'isSelected',
+		// 			R.find(R.pathEq(curr, namePath), availableActions)!,
+		// 		),
+		// 	)(competingOptions)
+		// ) {
+		// 	console.log('BUNNNZ');
+		// 	$availableActions.set(
+		// 		R.adjust(
+		// 			currentOptionIndex,
+		// 			R.over(R.lensProp<Action>('isSelected'), R.not),
+		// 			availableActions,
+		// 		),
+		// 	);
+		// 	return $availableActions.get();
+		// }
+		if (RU.isSelected(R.path([currentOptionIndex], availableActions))) {
 			$availableActions.set(
 				R.adjust(
 					currentOptionIndex,
-					R.over(R.lensProp<Action>('isSelected'), R.not),
+					R.over(R.lensProp<Action>('isSelected'), R.always(false)),
 					availableActions,
 				),
 			);
 			return $availableActions.get();
 		}
 
+		if (
+			!competingOptions.some(a =>
+				R.pathEq(true, [indexOfValue(a), 'isSelected'], availableActions),
+			) &&
+			true // R.pathEq(true, [currentOptionIndex, 'isSelected'], availableActions)
+		) {
+			$availableActions.set(
+				R.adjust(
+					currentOptionIndex,
+					R.over(R.lensProp<Action>('isSelected'), R.always(true)),
+					availableActions,
+				),
+			);
+			return $availableActions.get();
+		}
+
+		console.log('____TODOOOO_____');
+		// $availableActions.get().map((a) => console.log(`${a.value.name} - ${a.isSelected}`));
 		$availableActions.set(
-			RU.adjustAll(
-				R.map(R.nAry(1, indexOfValue), competingOptions),
-				getSelectUnselect(currentSubject, competingOptions),
-				availableActions,
-			) as Action[],
+			R.adjust(
+				currentOptionIndex,
+				R.over(R.lensProp<Action>('isSelected'), R.always(true)),
+				RU.adjustAll(
+					R.map(R.nAry(1, indexOfValue), competingOptions),
+					getSelectUnselect(currentSubject, competingOptions),
+					$availableActions.get(),
+				) as Action[],
+			),
 		);
+		// console.log('PRR_____');
+		// $availableActions.get().map((a) => console.log(`${a.value.name} - ${a.isSelected}`));
 
 		return $availableActions.get();
 	},

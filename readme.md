@@ -38,6 +38,7 @@ $ npm-check-extras --help
         --dev-only        Look at devDependencies only (skip dependencies)
         --global          Look at global modules
         --store-history   Store info about packages actions history to a file (.npm-check-history.json)
+        --time-travel     Revert changes in package.json from stored history
         --skip-unused     Skip check for unused packages
         --only-stats      Display only stats for updated/deleted packages and exit (it is applicable when you use --store-history option)
         --names           Show package names when --only-stats option is being used
@@ -55,6 +56,7 @@ $ npm-check-extras --help
     $ npm-check-extras --global
     $ npm-check-extras --check --global
     $ npm-check-extras -c -d
+    $ npm-check-extras --time-travel
     $ npm-check-extras --skup-unused
     $ npm-check-extras --only-stats
     $ npm-check-extras --report
@@ -81,6 +83,8 @@ Displaying only stats and exit by `--only-stats` or `--report` flag
 Displaing stats using `--date` flag to show stats only for specified date
 
 ![Show stats for date](media/stats-option-with-date-flag.png)
+
+![Time travel](media/time-travel.png)
 
 ## What's under the hood?
 

@@ -34,6 +34,13 @@ const getHistoryJson = (): HistoryItems => {
 	return R.defaultTo({} as HistoryItems, content);
 };
 
+const getUpdatesHistory = (): HistoryItems => {
+	const content = readHistory();
+	let updateItems = R.defaultTo({} as HistoryItems, content);
+	updateItems = R.map(R.filter(R.propEq('update', 'operation')), updateItems);
+	return updateItems;
+};
+
 const formatHistoryData = (data: Record<string, any>) => {
 	const oper: OperationItem[] = [];
 
@@ -44,7 +51,11 @@ const formatHistoryData = (data: Record<string, any>) => {
 					id: uuidv4(),
 					date: k,
 					name: R.prop('name', operation),
+					kindOfDependencyKey: R.prop('kindOfDependencyKey', operation),
+					semverValue: R.prop('semverValue', operation),
+					message: R.prop('message', operation),
 					operation: R.prop('operation', operation),
+					info: R.prop('info', operation),
 					command: R.prop('command', operation),
 				});
 			},
@@ -54,4 +65,10 @@ const formatHistoryData = (data: Record<string, any>) => {
 	return oper;
 };
 
-export {getGroupedHistory, getHistoryJson, hasHistory, formatHistoryData};
+export {
+	getGroupedHistory,
+	getHistoryJson,
+	getUpdatesHistory,
+	hasHistory,
+	formatHistoryData,
+};

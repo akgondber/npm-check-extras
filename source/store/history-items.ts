@@ -19,7 +19,8 @@ const transformItems = (items: OperationItem[]) => {
 
 const fetchHistory = () => {
 	const history = getHistoryJson();
-	$historyItems.set(transformItems(formatHistoryData(history)));
+	const transformedItems = transformItems(formatHistoryData(history));
+	$historyItems.set(transformedItems);
 };
 
 const showNext = action($historyItems, 'showNext', store => {

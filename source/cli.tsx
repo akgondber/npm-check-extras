@@ -22,6 +22,8 @@ const cli = meow(
 		--global          Look at global modules
 		--store-history   Store info about packages actions history to a file (.npm-check-history.json)
 		--skip-unused     Skip check for unused packages
+		--show-history    Show history of updates and deletes
+		--time-travel     Revert changes in package.json from stored history
 		--only-stats      Display only stats for updated/deleted packages and exit (it is applicable when you use --store-history option)
 		--names           Show package names when --only-stats option is being used
 		--date            Show stats only for specific date when --only-stats option is being used
@@ -35,7 +37,13 @@ const cli = meow(
 	  $ npm-check-extras --check-packages --dev-only
 	  $ npm-check-extras --check --dev-only
 	  $ npm-check-extras -c -d
+	  $ npm-check-extras --show-history
+	  $ npm-check-extras --time-travel
 	  $ npm-check-extras --skup-unused
+	  $ npm-check-extras --only-stats
+	  $ npm-check-extras --report
+	  $ npm-check-extras --report --names
+	  $ npm-check-extras --report --names --date 2024-11-27
 `,
 	{
 		importMeta: import.meta,
@@ -80,6 +88,18 @@ const cli = meow(
 				default: false,
 				aliases: ['shistory', 'shi', 'shst', 'shist'],
 			},
+			timeTravel: {
+				type: 'boolean',
+				default: false,
+				aliases: [
+					'revertchanges',
+					'revcha',
+					'revupd',
+					'revertupd',
+					'respack',
+					'rech',
+				],
+			},
 			onlyStats: {
 				type: 'boolean',
 				default: false,
@@ -89,6 +109,11 @@ const cli = meow(
 				type: 'boolean',
 				default: false,
 				aliases: ['names'],
+			},
+			travel: {
+				type: 'boolean',
+				default: false,
+				aliases: ['trvl', 'tra'],
 			},
 			date: {
 				type: 'string',
@@ -107,6 +132,7 @@ const {
 	skipUnused,
 	global,
 	showHistory,
+	timeTravel,
 } = cli.flags;
 
 if (cli.flags.onlyStats) {
@@ -162,6 +188,7 @@ if (cli.flags.onlyStats) {
 			isProduction={production}
 			isSkipUnused={skipUnused}
 			isShowHistory={showHistory}
+			isRevertUpdates={timeTravel}
 		/>,
 	);
 }

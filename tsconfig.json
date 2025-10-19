@@ -5,7 +5,8 @@
 		"jsx": "react",
 		"module": "NodeNext",
 		"lib": ["ES2021", "ES2021.String", "ES2022"],
-		"strict": true
+		"strict": true,
+		"strictPropertyInitialization": false
 		// "useUnknownInCatchVariables": false
 	},
 	"include": ["source"],
