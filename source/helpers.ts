@@ -1,5 +1,6 @@
 import * as R from 'ramda';
 import {v4 as uuidv4} from 'uuid';
+import {type Duration, parse} from 'date-fns';
 import {type Action, type FocusableItem, type PackageDetail} from './types.js';
 import {focusableItemsManager} from './store/focusable-items.js';
 import {colors} from './defaults.js';
@@ -86,6 +87,90 @@ const preJson = (value: Record<string, any>) => {
 	return JSON.stringify(value, null, 2);
 };
 
+const toDa = (dateString: string, format: string) => {
+	return parse(dateString, format, new Date());
+};
+
+const toDafu = (dateString: string) => {
+	return parse(dateString, 'yyyy-MM-dd HH:mm:ss', new Date());
+};
+
+const coInterval = (
+	firstDate: string,
+	firstFormat: string,
+	secondDate: string,
+	secondFormat: string,
+) => {
+	return {
+		start: parse(firstDate, firstFormat, new Date()),
+		end: parse(secondDate, secondFormat, new Date()),
+	};
+};
+
+const intervalIsLess = (firstDur: Duration, secondDur: Duration) => {
+	if (!R.isNil(secondDur.years)) {
+		if (R.isNil(firstDur.years)) {
+			return true;
+		}
+
+		if (secondDur.years !== firstDur.years) {
+			return secondDur.years > firstDur.years;
+		}
+	}
+
+	if (!R.isNil(secondDur.months)) {
+		if (R.isNil(firstDur.months)) {
+			return true;
+		}
+
+		if (secondDur.months !== firstDur.months) {
+			return secondDur.months > firstDur.months;
+		}
+	}
+
+	if (!R.isNil(secondDur.days)) {
+		if (R.isNil(firstDur.days)) {
+			return true;
+		}
+
+		if (secondDur.months !== firstDur.months) {
+			return secondDur.days > firstDur.days;
+		}
+	}
+
+	if (!R.isNil(secondDur.hours)) {
+		if (R.isNil(firstDur.hours)) {
+			return true;
+		}
+
+		if (secondDur.hours !== firstDur.hours) {
+			return secondDur.hours > firstDur.hours;
+		}
+	}
+
+	if (!R.isNil(secondDur.minutes)) {
+		if (R.isNil(firstDur.minutes)) {
+			return true;
+		}
+
+		if (secondDur.minutes !== firstDur.minutes) {
+			return secondDur.minutes > firstDur.minutes;
+		}
+	}
+
+	if (!R.isNil(secondDur.seconds)) {
+		if (R.isNil(firstDur.seconds)) {
+			return true;
+		}
+
+		if (secondDur.seconds !== firstDur.seconds) {
+			return secondDur.seconds > firstDur.seconds;
+		}
+	}
+
+	return false;
+};
+
 export {
 	getId,
 	isAvailableChar,
@@ -114,4 +199,8 @@ export {
 	prepSpaces,
 	wrasp,
 	preJson,
+	toDa,
+	toDafu,
+	coInterval,
+	intervalIsLess,
 };

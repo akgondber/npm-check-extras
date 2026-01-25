@@ -1,7 +1,7 @@
 {
 	"name": "npm-check-extras",
-	"version": "5.0.0",
-	"description": "CLI app to check for outdated and unused dependencies, and run update/delete action over selected ones",
+	"version": "6.0.0",
+	"description": "CLI app to check for outdated and unused dependencies, run update/delete action over selected ones, time travel from history and more",
 	"keywords": [
 		"app",
 		"booster",

@@ -1,7 +1,7 @@
 import {readFile, writeFile} from 'node:fs/promises';
 import * as R from 'ramda';
 import {sortPackageJson} from 'sort-package-json';
-import {type DependenciesEntries} from '../types.js';
+import {type OperationItem, type DependenciesEntries} from '../types.js';
 import {preJson} from '../helpers.js';
 
 const readPackageJson = async (): Promise<Record<string, any>> => {
@@ -36,4 +36,34 @@ const updatePacksonEntries = async (updatables: DependenciesEntries) => {
 	return result;
 };
 
-export {readPackageJson, updatePacksonEntries, updateDependenciesEntries};
+const transformToPason = (items: OperationItem[]): Record<string, any> => {
+	const result: Record<string, any> = R.reduce(
+		(acc: Record<string, any>, curr: OperationItem) => {
+			const currKey = curr.kindOfDependencyKey;
+			const packageWithSemver = R.objOf(curr.name, curr.semverValue);
+			if (R.has(currKey, acc)) {
+				acc = R.modify<any, any, any>(
+					currKey,
+					(entry: Record<string, any>) => {
+						return R.mergeDeepLeft(packageWithSemver, entry);
+					},
+					acc,
+				);
+			} else {
+				acc = R.assoc(currKey, packageWithSemver, acc);
+			}
+
+			return acc;
+		},
+		{},
+		items,
+	);
+	return result;
+};
+
+export {
+	readPackageJson,
+	updatePacksonEntries,
+	updateDependenciesEntries,
+	transformToPason,
+};

@@ -1,6 +1,7 @@
 import * as R from 'ramda';
 import {atom, action} from 'nanostores';
 import RangeStepper from 'range-stepper';
+import type {Duration} from 'date-fns';
 import type {Activable, OperationItem, Selectable} from '../types.js';
 import {getHistoryJson} from '../history.js';
 import RU from '../ramda-utils.js';
@@ -13,6 +14,17 @@ export type TravelSelectOption = Selectable &
 export type TravelItems = TravelSelectOption & {
 	items: OperationItem[];
 };
+
+export type SaTravelItems = {
+	date: string;
+	items: OperationItem[];
+};
+
+export type Durationable = {
+	duration: Duration;
+};
+
+export type SaTravelItemsDurationable = SaTravelItems & Durationable;
 
 export const $travelItems = atom<TravelItems[]>([]);
 

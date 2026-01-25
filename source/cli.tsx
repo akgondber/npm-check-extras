@@ -4,11 +4,27 @@ import {render} from 'ink';
 import meow from 'meow';
 import * as R from 'ramda';
 import pluralize from 'pluralize';
+import {intervalToDuration, isAfter, isBefore, isEqual, parse} from 'date-fns';
+import figureSet from 'figures';
 import App from './app.js';
 import RU from './ramda-utils.js';
 import {getHistoryJson} from './history.js';
-import type {HistoryEntry, OpString, StatItem} from './types.js';
-import {operationCountsMapping} from './helpers.js';
+import type {HistoryEntry, OperationItem, OpString, StatItem} from './types.js';
+import {
+	coInterval,
+	intervalIsLess,
+	operationCountsMapping,
+	toDafu,
+} from './helpers.js';
+import {
+	type Durationable,
+	type SaTravelItems,
+	type SaTravelItemsDurationable,
+} from './store/travel-items.js';
+import {
+	transformToPason,
+	updatePacksonEntries,
+} from './services/package-json-updater.js';
 
 const cli = meow(
 	`
@@ -105,6 +121,22 @@ const cli = meow(
 				default: false,
 				aliases: ['report'],
 			},
+			fastRestore: {
+				type: 'boolean',
+				default: false,
+				aliases: ['quickrevert', 'farest', 'restr'],
+			},
+			nearestDate: {
+				type: 'string',
+				aliases: ['nearest', 'sibling', 'neighbour'],
+				isRequired(flags, _input) {
+					if (flags['fastRestore']) {
+						return true;
+					}
+
+					return false;
+				},
+			},
 			packageNames: {
 				type: 'boolean',
 				default: false,
@@ -178,6 +210,105 @@ if (cli.flags.onlyStats) {
 			console.log();
 		}
 	}, R.keys(operationStats));
+} else if (cli.flags.fastRestore) {
+	const nearestDate = cli.flags.nearestDate!;
+	const rega =
+		/^(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})(?:\s*(?<hours>\d{2}):(?<minutes>\d{2}))?$/;
+	const mathcResult = rega.exec(nearestDate);
+	let acca = '';
+	let providedFormat = 'yyyy-MM-dd';
+	const storedFormat = 'yyyy-MM-dd HH:mm:ss';
+
+	if (mathcResult) {
+		const first = [
+			R.pathOr('', ['groups', 'year'], mathcResult),
+			R.pathOr('', ['groups', 'month'], mathcResult),
+			R.pathOr('', ['groups', 'day'], mathcResult),
+		];
+		acca += R.join('-', first);
+		const second = [
+			R.pathOr('00', ['groups', 'hours'], mathcResult),
+			R.pathOr('00', ['groups', 'minutes'], mathcResult),
+		];
+		if (second.length > 0) {
+			providedFormat += ' HH:mm:ss';
+			acca += ` ${R.join(':', second)}:00`;
+		}
+
+		console.log(providedFormat);
+
+		const nearestParsed = parse(acca, providedFormat, new Date());
+		const history = getHistoryJson();
+		const collected: SaTravelItems[] = R.addIndex(R.map)(
+			(item: any, i: number) => {
+				return {
+					date: item as string,
+					isSelected: false,
+					isActive: R.equals(i, 0),
+					items: R.map<OperationItem, OperationItem>(
+						a => R.assoc('date', item, a),
+						R.pathOr([] as OperationItem[], [item] as string[], history),
+					),
+				};
+			},
+			R.keys(history),
+		);
+		const fu = R.map<SaTravelItems, SaTravelItemsDurationable>(
+			ba =>
+				R.mergeDeepRight<SaTravelItems, Durationable>(ba, {
+					duration: intervalToDuration(
+						coInterval(ba.date, storedFormat, acca, providedFormat),
+					),
+				}),
+			collected,
+		);
+		const historyElements = R.sort<SaTravelItemsDurationable>(
+			(a, b) =>
+				R.when(
+					() => intervalIsLess(a.duration, b.duration),
+					R.always(0),
+					R.always(1),
+				) as number,
+			fu,
+		);
+		const kin = R.takeWhile(
+			a =>
+				isEqual(nearestParsed, toDafu(a.date)) ||
+				isAfter(nearestParsed, toDafu(a.date)),
+			historyElements,
+		);
+		const kon = R.takeLastWhile(
+			a => isBefore(nearestParsed, toDafu(a.date)),
+			historyElements,
+		);
+		if (R.isEmpty(kin) || R.isEmpty(kon)) {
+			console.log(`There is no entry nearest to provided date time.`);
+		} else {
+			const firstInterval = intervalToDuration(
+				coInterval(R.last(kin)!.date, storedFormat, acca, providedFormat),
+			);
+			const secondInterval = intervalToDuration(
+				coInterval(acca, providedFormat, R.head(kon)!.date, storedFormat),
+			);
+
+			const computedNearest = intervalIsLess(firstInterval, secondInterval)
+				? R.last(kin)
+				: R.head(kon);
+			if (!R.isNil(computedNearest)) {
+				const updatableEntries = transformToPason(computedNearest?.items);
+				const isSuccess = await updatePacksonEntries(updatableEntries);
+				console.log(
+					isSuccess
+						? `${figureSet.tick} The package.json file was successfully reverted`
+						: `${figureSet.cross} There was an error while reverting package.json file.`,
+				);
+			}
+		}
+	} else {
+		console.log(
+			`Provided nearestDate option is wrong. Please make sure you use either yyyy-MM-dd or yyyy-MM-dd HH:mm fromat.`,
+		);
+	}
 } else {
 	render(
 		<App

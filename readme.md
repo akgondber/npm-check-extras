@@ -1,6 +1,6 @@
 # npm-check-extras [![NPM version][npm-image]][npm-url]
 
-> CLI app to check for outdated and unused dependencies, and run update/delete action over selected ones
+> CLI app to check for outdated and unused dependencies, run update/delete action over selected ones, time travel from history and more
 
 ## Install
 
@@ -43,6 +43,8 @@ $ npm-check-extras --help
         --only-stats      Display only stats for updated/deleted packages and exit (it is applicable when you use --store-history option)
         --names           Show package names when --only-stats option is being used
         --date            Show stats only for specific date when --only-stats option is being used
+        --fast-restore    Do not run terminal user interface, just revert package.json to stored entry date more close to nearest-date
+        --nearest-date    Nearest date parameter applicable when using fast-restore option
 
 
   Examples
@@ -62,6 +64,7 @@ $ npm-check-extras --help
     $ npm-check-extras --report
     $ npm-check-extras --report --names
     $ npm-check-extras --report --names --date 2024-11-27
+    $ npm-check-extras --fast-restore --nearest-date 2026-01-25
 ```
 
 ## Screenshots
